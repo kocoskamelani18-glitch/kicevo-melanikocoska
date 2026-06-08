@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to bottom, #fdf6f0, #ffe8d6);
+    font-family: "Trebuchet MS", sans-serif;
+    color: #333;
+}
+
+#title2{
+    background: #e6f3c8;
+    text-align: center;
+    padding: 20px;
+    padding-top: 90px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#tab1{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 20px;
+    margin: 0;
+
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    transition: max-height 0.4s ease-in-out;
+}
+
+#tab1 li{
+    display: inline-block;
+}
+
+#tab1 a{
+    text-decoration: none;
+    color: rgb(7, 3, 3);
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#tab1 a:hover{
+    color: blue;
+    text-shadow: 0 0 10px white;
+    cursor: all-scroll;
+}
+
+#title2 h1{
+    font-size: 45px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+#OneP,
+#SecondP,
+#ThirdP,
+#FourthP,
+#FifthP{
+    width: 85%;
+    margin: 40px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #255302;
+}
+
+img{
+    width: 67%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: 0.4s;
+}
+
+img:hover{
+    transform: scale(1.03);
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-top: 10px;
+    font-family: Georgia, serif;
+}
+
+hr{
+    width: 70%;
+    margin: auto;
+    border: none;
+    height: 3px;
+    background-color: #a8ffa2;
+    border-radius: 10px;
+}
+
+#click{
+    width: 100%;
+    margin: 0;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    background: #e6f3c8;
+    line-height: 1.8;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* --- Isolated Burger Button Styles --- */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 22px;
+    right: 20px;
+    z-index: 1100;
+}
+
+.burger-menu span {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(7, 3, 3);
+    border-radius: 2px;
+    transition: 0.3s ease-in-out;
+}
+
+/* --- Clean Media Breakpoint for Handheld Viewports --- */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    #tab1 {
+        flex-direction: column;
+        gap: 15px;
+        max-height: 0;
+        overflow: hidden;
+        padding: 0;
+        background: rgba(255, 255, 255, 0.98);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    #tab1.active {
+        max-height: 250px;
+        padding: 20px;
+    }
+
+    #title2 {
+        padding-top: 80px;
+    }
+
+    #title2 h1 {
+        font-size: 32px;
+    }
+
+    #OneP, #SecondP, #ThirdP, #FourthP, #FifthP {
+        width: 92%;
+        padding: 18px;
+        margin: 25px auto;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    /* Transform burger lines to create close graphic */
+    .burger-menu.open span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    .burger-menu.open span:nth-child(2) {
+        opacity: 0;
+    }
+    .burger-menu.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+}

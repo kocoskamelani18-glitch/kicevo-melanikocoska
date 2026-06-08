@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places/ Места</title>
+    <link rel="stylesheet" href="places.css">
+</head>
+<body>
+    <header id="title2">
+        <!-- Burger Menu Button -->
+        <button class="burger-menu" id="burger-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <h1>Places/ Места</h1>
+        <ul id="tab1">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History/ Историја</a></li>
+            <li><a href="culture.html">Culture/ Култура</a></li>
+        </ul> 
+    </header> 
+
+    <div id="OneP">
+        <h2 id="kale">Kitino Kale</h2>
+        <img src="https://kicevo.mk/wp-content/uploads/2012/09/Kitino-Kale.jpg">
+        <p id="first">Kitino Kale is one of the most famous places in Kičevo. It is located on a hill above the city and offers a beautiful panoramic view. According to local legends, the fortress was connected to the story of Princess Kita, from whom the place got its name. Today, people visit Kitino Kale to enjoy nature, take photos, relax, and learn more about the history of Kičevo. <br><br> Китино Кале е едно од најпознатите места во Кичево. Се наоѓа на рид над градот и нуди прекрасен панорамски поглед. Според локалните легенди, тврдината е поврзана со приказната за принцезата Кита, по која местото го добило своето име. Денес, луѓето го посетуваат Китино Кале за да уживаат во природата, да фотографираат, да се релаксираат и да научат повеќе за историјата на Кичево.</p>
+    </div>
+
+    <hr>
+
+    <div id="SecondP">
+        <h2 id="precista">Monastry Precista</h2>
+        <img src="https://kicevo.mk/wp-content/uploads/2012/08/Precista-11.jpg">
+        <p id="second">This monastery is one of the most important religious and historical places near Kičevo. It was built many centuries ago and is surrounded by forests and peaceful nature. The monastery is known for its beautiful architecture, old frescoes, and calm atmosphere. Many visitors come here to pray, explore history, and enjoy the quiet surroundings.<br><br> Овој манастир е едно од најважните верски и историски места во близина на Кичево. Изграден е пред многу векови и е опкружен со шуми и мирна природа. Манастирот е познат по својата прекрасна архитектура, старите фрески и тивката атмосфера. Многу посетители доаѓаат тука за да се молат, да ја истражуваат историјата и да уживаат во мирното опкружување. </p>
+    </div>
+
+    <hr>
+
+    <div id="ThirdP">
+        <h2 id="halveti">Halveti Hayat Baba Tekke</h2>
+        <img src="https://static.wixstatic.com/media/d77597_b4164c5993814643bb20814482aae479~mv2.jpg/v1/fill/w_702,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Halveti%20Tekke.jpg">
+        <p id="third">The Halveti Hayati Baba Tekke is an important cultural and spiritual monument in Kičevo. It belongs to the Sufi Islamic tradition and represents the multicultural history of the city. The building has unique Ottoman-style architecture and is visited by tourists interested in religion, culture, and history.<br><br> Халвети Хајати Баба Теќе е важен културен и духовен споменик во Кичево. Тој припаѓа на суфиската исламска традиција и ја претставува мултикултурната историја на градот. Објектот има уникатна архитектура во османлиски стил и го посетуваат научно заинтересирани туристи за религија, култура и историја.</p>
+    </div>
+
+    <hr>
+
+    <div id="FourthP">
+        <h2 id="muzej">Museum of Western Macedonia</h2>
+        <img src="https://macedonia-timeless.com/img/muzej-nov-kicevo3.jpg">
+        <p id="fourth">The Museum of Western Macedonia preserves many historical objects, photographs, and documents connected to the region. Visitors can learn about the traditions, history, and important events that shaped Kičevo and the surrounding area. It is a great place for students and tourists who want to understand the local culture better. <br><br> Музејот на Западна Македонија чува многу историски предмети, фотографии и документи поврзани со регионот. Посетителите можат да научат за традициите, историјата и важните настани што го обликувале Кичево и околината. Тоа е одлично место за ученици и туристи кои сакаат подобро да ја разберат локалната култура.</p>
+    </div>
+
+    <hr>
+
+    <div id="FifthP">
+        <h2 id="koco">Koco Racin Cultural Center</h2>
+        <img src="https://marh.mk/wp-content/uploads/2020/09/dom-na-kultura-Koco-Racin.jpg">
+        <p id="fifth">The Kocho Racin Cultural Center is a place where many cultural events are organized, including concerts, theater performances, exhibitions, and festivals. It plays an important role in the artistic life of Kičevo and brings together people who enjoy music, art, and literature. <br><br> Центарот за култура „Кочо Рацин“ е место каде што се организираат многу културни настани, вклучувајќи концерти, театарски претстави, изложби и фестивали. Тој има важна улога во уметничкиот живот на Кичево и ги обединува луѓето кои уживаат во музика, уметност и литература.</p>
+    </div>
+
+    <h1 id="click">
+        Contact: <br> E-mail: melani.kocoska@icloud.com <br> Number: +389 71747844
+    </h1>
+
+    <script>
+        const burgerToggle = document.getElementById("burger-toggle");
+        const navMenu = document.getElementById("tab1");
+
+        burgerToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+            burgerToggle.classList.toggle("open");
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

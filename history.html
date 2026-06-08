@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kicevo History</title>
+    <link rel="stylesheet" href="history.css">
+</head>
+<body>
+    <header id="title1">
+        <button class="burger-menu" id="burger-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <h1>History/ Историја</h1>
+
+        <ul id="tab">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="places.html">Places / Места</a></li>
+            <li><a href="culture.html">Culture / Култура</a></li>
+        </ul>
+    </header>
+
+    <div id="paragraph1">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Ki%C4%8Devo_old.jpg" class="history-img">
+        <p id="first1">1. The city of Kičevo is one of the oldest towns in western North Macedonia, with a history that dates back to ancient times. It is located in a valley surrounded by mountains, which made it an important settlement for trade and travel throughout history. Archaeological findings show that people lived in this area during the Roman and Byzantine periods.<br> <br> Градот Кичево е еден од најстарите градови во западна Северна Македонија, со историја што потекнува уште од античките времиња. Се наоѓа во котлина опкружена со планини, што го направило важно место за трговија и патување низ историјата. Археолошките пронајдоци покажуваат дека луѓе живееле на ова подрачје уште во римскиот и византискиот период.</p>
+    </div>
+    <hr>
+    <div id="paragraph2">
+        <img src="https://www.delcampe.net/static/img_large/auction/001/678/161/466_001.jpg" class="history-img">
+        <p id="second2">2. During the Middle Ages, Kičevo became an important cultural and religious center. Many churches and monasteries were built in and around the city, showing the strong traditions and faith of the local people. The region was influenced by different empires and rulers over the centuries, including the Ottoman Empire, which controlled the area for several hundred years. <br> <br> Во средниот век, Кичево станало важен културен и верски центар. Многу цркви и манастири биле изградени во и околу градот, покажувајќи ги силните традиции и верата на локалното население. Регионот бил под влијание на различни империи и владетели низ вековите, вклучувајќи ја и Отоманската Империја, која владеела со областа неколку стотици години.</p>
+    </div>
+    <hr>
+    <div id="paragraph3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIQ9avTt5SLMptok4vG69fSXugbVu0riKdKw&s" class="history-img">
+        <p id="third3">3. In the 19th and early 20th centuries, the people of Kičevo participated in movements for freedom and national identity. The city played a role during the Ilinden Uprising in 1903, when many citizens fought against Ottoman rule. After the Balkan Wars and later historical events, Kičevo became part of modern-day North Macedonia. <br> <br> In the 19th and early 20th centuries, the people of Kičevo participated in movements for freedom and national identity. The city played a role during the Ilinden Uprising in 1903, when many citizens fought against Ottoman rule. After the Balkan Wars and later historical events, Kičevo became part of modern-day North Macedonia.</p>
+    </div>
+    <hr>
+    <div id="paragraph4">
+          <img src="https://www.delcampe.net/static/img_large/auction/001/678/161/565_001.jpg" class="history-img">
+        <p id="fourth4">4. Today, Kičevo is known for its rich cultural heritage, beautiful nature, and mix of traditions. The city continues to preserve its history through monuments, churches, mosques, and local customs that reflect the diverse past of the region. <br><br> Денес, Кичево е познато по своето богато културно наследство, прекрасната природа и мешавината на традиции. Градот продолжува да ја зачувува својата историја преку споменици, цркви, џамии и локални обичаи кои го отсликуваат богатото минато на регионот.</p>
+    </div>
+
+    <h1 id="click">
+        Contact: <br> E-mail: melani.kocoska@icloud.com <br> Number: +389 71747844
+    </h1>
+
+    <script>
+        const burgerToggle = document.getElementById("burger-toggle");
+        const navMenu = document.getElementById("tab");
+
+        burgerToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+            burgerToggle.classList.toggle("open");
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
